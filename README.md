@@ -15,16 +15,16 @@ Sampel Codepen dari Traversy Media [Codepen](https://codepen.io/FlorinPop17/pen/
 
 Latihan dari Blog Florin Pop [Florin Pop Sign In Sign Up](https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/)
 
-
 ____
 
-
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
