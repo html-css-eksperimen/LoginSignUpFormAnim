@@ -8,7 +8,10 @@
 
 ![PreviewGambar](https://raw.githubusercontent.com/html-css-eksperimen/LoginSignUpFormAnim/master/preview2.png)
 
-Sampel template untuk halaman login dan sign up yang bersifat interaktif. Halaman Login Sign Up dibuat berdasarkan latihan dari Traversy Media dan Florin Pop Blog. Sampel template ini juga sudah digabungkan dengan Vue JS untuk penggunaan lebih lanjut.
+Sampel template untuk halaman login dan sign up yang bersifat interaktif. Halaman Login Sign Up dibuat berdasarkan latihan dari Traversy Media dan Florin Pop Blog. Sampel template ini juga sudah digabungkan dengan Vue JS untuk penggunaan lebih lanjut. 
+
+> Demo aplikasi ini dapat dilihat di halaman Github Pages berikut ini : 
+> [Sign In Sign Up Demo](https://html-css-eksperimen.github.io/LoginSignUpDemo)
 
 
 ## Referensi Latihan
