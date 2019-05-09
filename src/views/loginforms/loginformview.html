@@ -1,3 +1,48 @@
 <div>
-    
+  <div class="container" id="container" v-bind:class="panelActiveClassObject">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Buat Akun</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>atau gunakan email anda untuk registrasi</span>
+        <input type="text" placeholder="Nama"  v-model="signUpDataObject.nama"/>
+        <input type="email" placeholder="Email" v-model="signUpDataObject.email" />
+        <input type="password" placeholder="Password" v-model="signUpDataObject.password"/>
+        <button class="button-signup-margin" v-on:click.prevent="sendProsesSignUp">Sign Up</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>atau gunakan akun anda</span>
+        <input type="email" placeholder="Email" v-model="loginDataObject.email"/>
+        <input type="password" placeholder="Password" v-model="loginDataObject.password"/>
+        <a href="#">Lupa kata sandi anda?</a>
+        <button v-on:click.prevent="sendProsesLogin">Sign In</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Selamat Datang Kembali!</h1>
+          <p>Untuk tetap terhubung dengan kami, silahkan masuk dengan akun anda</p>
+          <button class="ghost" id="signIn" v-on:click="startLoginOpen()">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Halo, Teman!</h1>
+          <p>Daftarkan diri anda dan mulai gunakan layanan kami segera</p>
+          <button class="ghost" id="signUp" v-on:click="startSignUpOpen()">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
