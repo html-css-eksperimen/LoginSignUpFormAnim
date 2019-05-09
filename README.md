@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+![PreviewGambar](https://raw.githubusercontent.com/html-css-eksperimen/HamburgerMenuCSS/master/preview1.png)
+
 Sampel template untuk halaman login dan sign up yang bersifat interaktif. Halaman Login Sign Up dibuat berdasarkan latihan dari Traversy Media dan Florin Pop Blog. Sampel template ini juga sudah digabungkan dengan Vue JS untuk penggunaan lebih lanjut.
 
 
