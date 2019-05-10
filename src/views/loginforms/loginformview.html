@@ -9,10 +9,12 @@
           <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <span>atau gunakan email anda untuk registrasi</span>
-        <input type="text" placeholder="Nama"  v-model="signUpDataObject.nama"/>
+        <input type="text" placeholder="Nama" v-model="signUpDataObject.nama" />
         <input type="email" placeholder="Email" v-model="signUpDataObject.email" />
-        <input type="password" placeholder="Password" v-model="signUpDataObject.password"/>
-        <button class="button-signup-margin" v-on:click.prevent="sendProsesSignUp">Sign Up</button>
+        <input type="password" placeholder="Password" v-model="signUpDataObject.password" />
+        <vue-recaptcha v-bind:sitekey="getterSiteKeyCaptcha" v-on:verify="onVerifyCaptcha" v-on:expired="onExpiredCaptcha" ref="recaptcha">
+          <button class="button-signup-margin" v-on:click.prevent="sendProsesSignUp">Sign Up</button>
+        </vue-recaptcha>
       </form>
     </div>
     <div class="form-container sign-in-container">
@@ -24,10 +26,12 @@
           <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <span>atau gunakan akun anda</span>
-        <input type="email" placeholder="Email" v-model="loginDataObject.email"/>
-        <input type="password" placeholder="Password" v-model="loginDataObject.password"/>
+        <input type="email" placeholder="Email" v-model="loginDataObject.email" />
+        <input type="password" placeholder="Password" v-model="loginDataObject.password" />
         <a href="#">Lupa kata sandi anda?</a>
-        <button v-on:click.prevent="sendProsesLogin">Sign In</button>
+        <vue-recaptcha v-bind:sitekey="getterSiteKeyCaptcha" v-on:verify="onVerifyCaptcha" v-on:expired="onExpiredCaptcha" ref="recaptcha">
+          <button v-on:click.prevent="sendProsesLogin">Sign In</button>
+        </vue-recaptcha>
       </form>
     </div>
     <div class="overlay-container">
